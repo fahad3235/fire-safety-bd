@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fire Safety BD — অগ্নি-নিরাপত্তা বাংলাদেশ</title>
+<meta name="description" content="Offline bilingual fire-safety companion for Bangladesh: home risk check, extinguisher guide, emergency numbers 999 / 102, safety checklist, escape plan and quiz.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <span class="flame" aria-hidden="true">🔥</span>
+      <div>
+        <h1 data-i18n="appTitle">Fire Safety BD</h1>
+        <p class="tagline" data-i18n="tagline">Know the risk. Stop the fire. Save lives.</p>
+      </div>
+    </div>
+    <button id="lang-btn" class="btn lang" type="button">বাংলা</button>
+  </div>
+  <p class="wrap disclaimer" data-i18n="disclaimer">A public-awareness guide, not an official Fire Service app. In an emergency call 999 or 102 first.</p>
+</header>
+
+<nav class="tabs wrap" aria-label="Sections">
+  <button id="tab-risk" class="tab active" type="button">Risk Check</button>
+  <button id="tab-ext" class="tab" type="button">Extinguisher</button>
+  <button id="tab-emergency" class="tab" type="button">Emergency</button>
+  <button id="tab-checklist" class="tab" type="button">Checklist</button>
+  <button id="tab-escape" class="tab" type="button">Escape Plan</button>
+  <button id="tab-quiz" class="tab" type="button">Quiz</button>
+  <button id="tab-facts" class="tab" type="button">Facts</button>
+</nav>
+
+<main class="wrap">
+  <section id="panel-risk" class="panel active" aria-label="Risk check"></section>
+  <section id="panel-ext" class="panel" aria-label="Extinguisher guide"></section>
+  <section id="panel-emergency" class="panel" aria-label="Emergency numbers"></section>
+  <section id="panel-checklist" class="panel" aria-label="Safety checklist"></section>
+  <section id="panel-escape" class="panel" aria-label="Escape plan"></section>
+  <section id="panel-quiz" class="panel" aria-label="Quiz"></section>
+  <section id="panel-facts" class="panel" aria-label="Facts"></section>
+</main>
+
+<footer class="wrap">
+  <p data-i18n="footer">Built for Bangladesh. Check your home today — 75 fires a day is 75 too many.</p>
+  <p class="muted small">Fire Safety BD — offline, no account, nothing leaves your device. Emergency: <a href="tel:999">999</a> · <a href="tel:102">102</a></p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
